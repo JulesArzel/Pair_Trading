@@ -1,0 +1,7 @@
+Stochastic Control Approach
+Make sure the pair holds one by checking if there are any ruptures in the beta between the stocks
+Make the strategy regime adaptive, not enter at the same level for different volatility regimes
+Volatility scaled allocation, allocate less to volatile spreads
+Add transaction costs
+Don't allow negative equity in a pair, shut it down if I lose all the capital
+Better assess performance by obviously seperating the data used to select pairs and the one used for backtest
