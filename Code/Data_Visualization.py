@@ -375,7 +375,26 @@ class DataVisualization():
         )
 
         return fig
+    
+    def plot_github(self, df, title="", xlabel="Date", ylabel="Value"):
+        if df is None or df.empty:
+            raise ValueError("Input DataFrame is empty")
 
+        plt.figure(figsize=(12, 6))
+
+        for i, col in enumerate(df.columns):
+            if i < 5:
+                plt.plot(df.index, df[col], label=str(col))
+            else:
+                plt.plot(df.index, df[col])
+
+        plt.title(title)
+        plt.xlabel(xlabel)
+        plt.ylabel(ylabel)
+        plt.legend()
+        plt.grid(True)
+        plt.tight_layout()
+        plt.show()
 
 
 
@@ -411,3 +430,5 @@ def plot_full_tearsheet(portfolio_df):
 
     plt.tight_layout()
     plt.show()
+    
+
