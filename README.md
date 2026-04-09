@@ -105,6 +105,7 @@ Potential directions for further research include:
 
 -Stochastic Control Approach <br>
 -Make sure the pair holds one by checking if there are any ruptures in the beta between the stocks <br>
+-Make sure the hedge ratio (beta) is estimating in walk-forward manner, otherwise look-ahead bias <br>
 -Make the strategy regime adaptive, not enter at the same level for different volatility regimes <br>
 -Volatility scaled allocation, allocate less to volatile spreads <br>
 -Add transaction costs <br>
